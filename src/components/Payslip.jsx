@@ -5,7 +5,7 @@ const Payslip = ({ employeeDetails }) => {
   return (
     <div style={{ textAlign: 'center', margin: '20px' }}>
       <Typography variant="h4" gutterBottom >
-        PAYSLIP
+        MEDICAL EXPENSES
       </Typography>
       <Grid container justifyContent="space-between"> {/* Using Grid container for layout */}
         <Grid item>
@@ -19,13 +19,19 @@ const Payslip = ({ employeeDetails }) => {
                   <TableCell style={{  padding: '9px', width: '200px'}}>Name:</TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell style={{  padding: '9px', width: '200px'}}>Address:</TableCell>
+                  <TableCell style={{  padding: '9px', width: '200px'}}>Employee Number:</TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell style={{  padding: '9px', width: '200px'}}  >Phno:</TableCell>
+                  <TableCell style={{  padding: '9px', width: '200px'}}>Position:</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell style={{  padding: '9px', width: '200px'}}  >Phone no:</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell style={{  padding: '9px', width: '200px'}}>Email:</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell style={{  padding: '9px', width: '200px'}}>Department</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
