@@ -10,10 +10,12 @@ import MedicalExpenses from './components/Medical'
 import ButtonPrint from './components/ButtonPrint';
 import Esicslip from './components/Esicslip';
 import ButtonEsi from './components/ButtonEsi';
+import Resiginationslip from './components/Resiginationslip';
+import Buttonres from './components/Buttontres';
 function App() {
   return (
     <div className="App">
-      <ButtonEsi/>
+      <Buttonres/>
     </div>
   );
 }
