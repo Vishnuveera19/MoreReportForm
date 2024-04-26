@@ -8,10 +8,12 @@ import DashBoard from './pages/DashBoard';
 import Payslip from './components/Payslip'
 import MedicalExpenses from './components/Medical'
 import ButtonPrint from './components/ButtonPrint';
+import Esicslip from './components/Esicslip';
+import ButtonEsi from './components/ButtonEsi';
 function App() {
   return (
     <div className="App">
-      <ButtonPrint/>
+      <ButtonEsi/>
     </div>
   );
 }
