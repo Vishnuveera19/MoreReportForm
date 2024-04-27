@@ -12,10 +12,13 @@ import Esicslip from './components/Esicslip';
 import ButtonEsi from './components/ButtonEsi';
 import Resiginationslip from './components/Resiginationslip';
 import Buttonres from './components/Buttontres';
+import LeaveApplyForm from './components/Leaveslip';
+
+import Buttonleave from './components/Buttonleave';
 function App() {
   return (
     <div className="App">
-      <Buttonres/>
+      <Buttonleave/>
     </div>
   );
 }
