@@ -1,11 +1,11 @@
 import React from 'react';
 import { Typography, Table, TableBody, TableCell, TableContainer, TableRow, Paper, Grid } from '@mui/material';
 
-const Esicslip = ({ employeeDetails }) => {
+const Gratuity = ({ employeeDetails }) => {
   return (
     <div style={{ textAlign: 'center', margin: '20px' }}>
       <Typography variant="h4" gutterBottom >
-        ESIC
+        GRATUITY
       </Typography>
       <Grid container justifyContent="center"/> 
       <Grid item>
@@ -26,46 +26,40 @@ const Esicslip = ({ employeeDetails }) => {
               
               </TableRow>
               <TableRow>
-                <TableCell style={{  padding: '9px', width: '100px'}}>UHID Number:</TableCell>
+                <TableCell style={{  padding: '9px', width: '100px'}}>Address:</TableCell>
                 <TableCell style={{textAlign:'left',  padding: '9px', width: '100px'}}>DTU678</TableCell>
             
               </TableRow>
               <TableRow>
-                <TableCell style={{  padding: '9px', width: '100px'}}>Dispensary Name:</TableCell>
+                <TableCell style={{  padding: '9px', width: '100px'}}>Department:</TableCell>
                 <TableCell style={{textAlign:'left',  padding: '9px', width: '100px'}}>DDDDdd</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell style={{  padding: '9px', width: '100px'}} >Registration Date :</TableCell>
+                <TableCell style={{  padding: '9px', width: '100px'}}  > Date of Appoinment:</TableCell>
                 <TableCell style={{textAlign:'left',  padding: '9px', width: '100px'}}>28-03-2002</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell style={{  padding: '9px', width: '100px'}}>Current date of Appointment:</TableCell>
+                <TableCell style={{  padding: '9px', width: '100px'}}> Date of Termination:</TableCell>
                 <TableCell style={{textAlign:'left',  padding: '9px', width: '100px'}}>09-05-2014</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell style={{  padding: '9px', width: '100px'}}>Pehchan Done:</TableCell>
+                <TableCell style={{  padding: '9px', width: '100px'}}>Total period of service:</TableCell>
                 <TableCell style={{textAlign:'left',  padding: '9px', width: '100px'}}>No</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell style={{  padding: '9px', width: '100px'}}>Printing Done:</TableCell>
+                <TableCell style={{  padding: '9px', width: '100px'}}>Amount of wages last drawn:</TableCell>
                 <TableCell style={{textAlign:'left',  padding: '9px', width: '100px'}}>No</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell style={{  padding: '9px', width: '100px'}}>Number of Duplicate Cards Done:</TableCell>
+                <TableCell style={{  padding: '9px', width: '100px'}}>Amount of Gratuity claimed:</TableCell>
                 <TableCell style={{textAlign:'left',  padding: '9px', width: '100px'}}>DTU678</TableCell>
               </TableRow>
+             
               <TableRow>
-                <TableCell style={{  padding: '9px', width: '100px'}}>Latest Duplicate card Request Location:</TableCell>
-                <TableCell style={{textAlign:'left',  padding: '9px', width: '100px'}}>DTU678</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell style={{  padding: '9px', width: '100px'}}>dispensary Name For family:</TableCell>
+                <TableCell style={{  padding: '9px', width: '100px'}}>claimed date:</TableCell>
                 <TableCell style={{textAlign:'left',  padding: '9px', width: '100px'}}>NA</TableCell>
               </TableRow>
-              <TableRow>
-                <TableCell style={{  padding: '9px', width: '100px'}}>Insurance Number:</TableCell>
-                <TableCell style={{textAlign:'left',  padding: '9px', width: '100px'}}>23445465</TableCell>
-              </TableRow>
+             
               <TableRow>
                 <TableCell style={{  padding: '9px', width: '100px'}}>Date Of Birth:</TableCell>
                 <TableCell style={{textAlign:'left',  padding: '9px', width: '100px'}}>23-06-2019</TableCell>
@@ -78,18 +72,7 @@ const Esicslip = ({ employeeDetails }) => {
                 <TableCell style={{  padding: '9px', width: '100px'}}>Phone no:</TableCell>
                 <TableCell style={{textAlign:'left',  padding: '9px', width: '100px'}}>1234567890</TableCell>
               </TableRow>
-              <TableRow>
-                <TableCell style={{  padding: '9px', width: '100px'}}>Pehchan Processed Date:</TableCell>
-                <TableCell style={{textAlign:'left',  padding: '9px', width: '100px'}}>NA</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell style={{  padding: '9px', width: '100px'}}>Printing Date:</TableCell>
-                <TableCell style={{textAlign:'left',  padding: '9px', width: '100px'}}>NA</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell style={{  padding: '9px', width: '100px'}}>Last Duplicate Card Date:</TableCell>
-                <TableCell style={{textAlign:'left',  padding: '9px', width: '100px'}}>NA</TableCell>
-              </TableRow>
+             
 
             </TableBody>
           </Table>
@@ -105,4 +88,4 @@ const Esicslip = ({ employeeDetails }) => {
       </div>
   );
 };
-export default Esicslip;
+export default Gratuity;

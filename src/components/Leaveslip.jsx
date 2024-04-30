@@ -1,8 +1,4 @@
 
-
-
-
-
 import React, { useState } from 'react';
 import { TextField, Button, Typography, Grid, Paper, MenuItem, Select, FormControl, InputLabel } from '@mui/material';
 
@@ -19,8 +15,9 @@ const LeaveApplyForm = () => {
         leaveCode: '',
         fromDate: '', 
         fromStatus: '',
-        toDate: '', 
+        toDate: '',
         status: '',
+        Approve:'',
         Days: '',
         Reason: '',
         yearEnd: ''

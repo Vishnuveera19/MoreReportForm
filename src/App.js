@@ -13,12 +13,18 @@ import ButtonEsi from './components/ButtonEsi';
 import Resiginationslip from './components/Resiginationslip';
 import Buttonres from './components/Buttontres';
 import LeaveApplyForm from './components/Leaveslip';
+import EPFSlip from './components/EPFslip.jsx';
+import ButtonEpf from './ButtonEpf.js';
+import Gratuity from './components/Gratuity.jsx';
+import Buttongra from './components/Buttongra.js';
+import AttendanceForm from './components/Attendance.jsx';
 
-import Buttonleave from './components/Buttonleave';
 function App() {
   return (
     <div className="App">
-      <Buttonleave/>
+         
+   
+<AttendanceForm/>
     </div>
   );
 }
