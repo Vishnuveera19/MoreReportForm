@@ -11,7 +11,7 @@ const Medical = ({ employeeDetails }) => {
   };
 
   const handleSubmit = () => {
-   
+    
     if (!selectedFile) {
       console.error('No file selected');
       return;
@@ -59,116 +59,185 @@ const Medical = ({ employeeDetails }) => {
 
   return (
     <div style={{ textAlign: 'center', margin: '20px' }}>
-      <Typography variant="h4" gutterBottom >
-        MEDICAL EXPENSES
+      <Grid>
+      <Typography variant="h6" gutterBottom >
+            Data Test
       </Typography>
-      <Grid container justifyContent="center"> 
-        <Grid item>
-          <TableContainer component={Paper} style={{ width: 'fit-content' , marginright:'200px', marginTop: '10px'}}> 
-            <TableContainer id="pdf-content" component={Paper} style={{ width: 'fit-content', marginRight: '200px', marginTop: '10px' }}></TableContainer>
-            <Table>
-              <TableBody>
-                <TableRow>
-                  <TableCell style={{ backgroundColor: 'green',textAlign:'center' ,color: 'white', padding: '10px', width: '400px' }}>Employee Details</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell style={{  padding: '8px', width: '200px'}}>Name:  M.Shanmugapriya</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell style={{  padding: '8px', width: '200px'}}>Employee Number:  E001</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell style={{  padding: '8px', width: '200px'}}>Position:   Developer</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell style={{  padding: '8px', width: '200px'}}  >Phone no:  9876543210</TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell style={{  padding: '8px', width: '200px'}}>Email:  shanmu@gmail.com</TableCell>
-                </TableRow>
-                
-                <TableRow>
-                  <TableCell style={{  padding: '8px', width: '200px'}}>Aadharno:  12345g67</TableCell>
-                </TableRow>
-              </TableBody>
-            </Table>
-          </TableContainer>
-        </Grid>
-      </Grid>
-      <br></br>
-      <br></br>
+      <Typography varient="h2" >
+      Worked Hours Details For the Date of 29/04/2009    
+        </Typography>
+     
       <Grid item xs={12}>
         <TableContainer component={Paper} style={{ marginTop: '20px', marginLeft: 'auto', marginRight: 'auto', maxWidth: '1100px' }}>
           <Table>
-            <TableRow>
-                <TableCell style={{ backgroundColor: 'blue', color: 'white', padding: '10px', width: '200px' }}>MEDICAL EXPENSES</TableCell>
-                <TableCell style={{ backgroundColor: 'blue', color: 'white', padding: '10px', width: '200px' }}></TableCell>
-                <TableCell style={{ backgroundColor: 'blue', color: 'white', padding: '10px', width: '200px' }}></TableCell>
-                <TableCell style={{ backgroundColor: 'blue', color: 'white', padding: '10px', width: '200px' }}></TableCell>
-                <TableCell style={{ backgroundColor: 'blue', color: 'white', padding: '10px', width: '200px' }}></TableCell>
+            <TableRow >
+                <TableCell style={{ backgroundColor: '', color: 'black', padding: '10px', width: '100px' }}>s.no</TableCell>
+                <TableCell style={{ backgroundColor: '', color: 'black', padding: '10px', width: '100px' }}>EMP CODE</TableCell>
+                <TableCell style={{ backgroundColor: '', color: 'black', padding: '10px', width: '100px' }}>EMP name</TableCell>
+                <TableCell style={{ backgroundColor: '', color: 'black', padding: '10px', width: '100px' }}>Date</TableCell>
+                <TableCell style={{ backgroundColor: '', color: 'black', padding: '10px', width: '200px' }}>shift</TableCell>
+                <TableCell style={{ backgroundColor: '', color: 'black', padding: '10px', width: '200px' }}>intime |</TableCell>
+                <TableCell style={{ backgroundColor: '', color: 'black', padding: '10px', width: '200px' }}>outtime |</TableCell>
+                <TableCell style={{ backgroundColor: '', color: 'black', padding: '10px', width: '200px' }}>intime ||</TableCell>
+                <TableCell style={{ backgroundColor: '', color: 'black', padding: '10px', width: '200px' }}>outtime ||</TableCell>
             </TableRow>
             <TableRow>
-                <TableCell style={{ backgroundColor: 'green', color: 'white', padding: '10px', width: '200px' }}>Date of Service</TableCell>
-                <TableCell style={{ backgroundColor: 'green', color: 'white', padding: '10px', width: '200px' }}>Physician or other Hospital</TableCell>
-                <TableCell style={{ backgroundColor: 'green', color: 'white', padding: '10px', width: '200px' }}>Amount</TableCell>
-                <TableCell style={{ backgroundColor: 'green', color: 'white', padding: '10px', width: '200px' }}></TableCell>
-                <TableCell style={{ backgroundColor: 'green', color: 'white', padding: '10px', width: '200px' }}>Uploadbill</TableCell>
-            </TableRow>
-            <TableRow>
-                <TableCell >28-03-2002</TableCell> 
-                <TableCell >GVM</TableCell>   
-                <TableCell >5000</TableCell>
-                <TableCell ></TableCell>   
-                <TableCell >
-                  <input type="file" onChange={handleFileSelect} />
-                  {selectedFile && <p>Selected File: {selectedFile.name}</p>} 
-                  <Button variant='contained' onClick={handleSubmit}>SUBMIT</Button>  
-                </TableCell>
+                <TableCell>1</TableCell> 
+                <TableCell>0031</TableCell>   
+                <TableCell >sanjeev</TableCell>
+                <TableCell>20/08/2024</TableCell> 
+                <TableCell>G</TableCell> 
+                <TableCell>08:31</TableCell>   
+                <TableCell >13:31</TableCell>
+                <TableCell>13:17</TableCell>   
+                <TableCell>17:17</TableCell>    
             </TableRow>                 
             <TableRow>
-                <TableCell >12-09-2004</TableCell> 
-                <TableCell >GVM</TableCell>   
-                <TableCell >5000</TableCell>
-                <TableCell ></TableCell>   
-                <TableCell >
-                  <input type="file" onChange={handleFileSelect} />
-                  {selectedFile && <p>Selected File: {selectedFile.name}</p>}
-                  <Button variant='contained' onClick={handleSubmit}>SUBMIT</Button>
-                </TableCell>
-            </TableRow>
+                <TableCell>2</TableCell> 
+                <TableCell>0031</TableCell>   
+                <TableCell >sanjeev</TableCell>
+                <TableCell>20/08/2024</TableCell> 
+                <TableCell>G</TableCell> 
+                <TableCell>08:31</TableCell>   
+                <TableCell >13:31</TableCell>
+                <TableCell>13:17</TableCell>   
+                <TableCell>17:17</TableCell>    
+            </TableRow>   
             <TableRow>
-                <TableCell >31-08-2019</TableCell> 
-                <TableCell >GVM</TableCell>   
-                <TableCell >3000</TableCell>
-                <TableCell ></TableCell>   
-                <TableCell >
-                  <input type="file" onChange={handleFileSelect} />
-                  {selectedFile && <p>Selected File: {selectedFile.name}</p>}
-                  <Button variant='contained' onClick={handleSubmit}>SUBMIT</Button>
-                </TableCell>
-            </TableRow>
+                <TableCell>3</TableCell> 
+                <TableCell>0031</TableCell>   
+                <TableCell >sanjeev</TableCell>
+                <TableCell>20/08/2024</TableCell> 
+                <TableCell>G</TableCell> 
+                <TableCell>08:31</TableCell>   
+                <TableCell >13:31</TableCell>
+                <TableCell>13:17</TableCell>   
+                <TableCell>17:17</TableCell>    
+            </TableRow>   
             <TableRow>
-                <TableCell ></TableCell> 
-                <TableCell ></TableCell>   
-                <TableCell ></TableCell>
-                <TableCell ></TableCell>   
-                <TableCell ></TableCell>
-            </TableRow>
+                <TableCell>4</TableCell> 
+                <TableCell>0031</TableCell>   
+                <TableCell >sanjeev</TableCell>
+                <TableCell>20/08/2024</TableCell> 
+                <TableCell>G</TableCell> 
+                <TableCell>08:31</TableCell>   
+                <TableCell >13:31</TableCell>
+                <TableCell>13:17</TableCell>   
+                <TableCell>17:17</TableCell>    
+            </TableRow>   
             <TableRow>
+                <TableCell>5</TableCell> 
+                <TableCell>0031</TableCell>   
+                <TableCell >sanjeev</TableCell>
+                <TableCell>20/08/2024</TableCell> 
+                <TableCell>G</TableCell> 
+                <TableCell>08:31</TableCell>   
+                <TableCell >13:31</TableCell>
+                <TableCell>13:17</TableCell>   
+                <TableCell>17:17</TableCell>    
+            </TableRow>   
+            <TableRow>
+                <TableCell>6</TableCell> 
+                <TableCell>0031</TableCell>   
+                <TableCell >sanjeev</TableCell>
+                <TableCell>20/08/2024</TableCell> 
+                <TableCell>G</TableCell> 
+                <TableCell>08:31</TableCell>   
+                <TableCell >13:31</TableCell>
+                <TableCell>13:17</TableCell>   
+                <TableCell>17:17</TableCell>    
+            </TableRow>   
+            <TableRow>
+                <TableCell>7</TableCell> 
+                <TableCell>0031</TableCell>   
+                <TableCell >sanjeev</TableCell>
+                <TableCell>20/08/2024</TableCell> 
+                <TableCell>G</TableCell> 
+                <TableCell>08:31</TableCell>   
+                <TableCell >13:31</TableCell>
+                <TableCell>13:17</TableCell>   
+                <TableCell>17:17</TableCell>    
+            </TableRow>   
+            <TableRow>
+                <TableCell>8</TableCell> 
+                <TableCell>0031</TableCell>   
+                <TableCell >sanjeev</TableCell>
+                <TableCell>20/08/2024</TableCell> 
+                <TableCell>G</TableCell> 
+                <TableCell>08:31</TableCell>   
+                <TableCell >13:31</TableCell>
+                <TableCell>13:17</TableCell>   
+                <TableCell>17:17</TableCell>    
+            </TableRow>   
+            <TableRow>
+                <TableCell>9</TableCell> 
+                <TableCell>0031</TableCell>   
+                <TableCell >sanjeev</TableCell>
+                <TableCell>20/08/2024</TableCell> 
+                <TableCell>G</TableCell> 
+                <TableCell>08:31</TableCell>   
+                <TableCell >13:31</TableCell>
+                <TableCell>13:17</TableCell>   
+                <TableCell>17:17</TableCell>    
+            </TableRow>   
+            <TableRow>
+                <TableCell>10</TableCell> 
+                <TableCell>0031</TableCell>   
+                <TableCell >sanjeev</TableCell>
+                <TableCell>20/08/2024</TableCell> 
+                <TableCell>G</TableCell> 
+                <TableCell>08:31</TableCell>   
+                <TableCell >13:31</TableCell>
+                <TableCell>13:17</TableCell>   
+                <TableCell>17:17</TableCell>    
+            </TableRow>   
+            <TableRow>
+                <TableCell>11</TableCell> 
+                <TableCell>0031</TableCell>   
+                <TableCell >sanjeev</TableCell>
+                <TableCell>20/08/2024</TableCell> 
+                <TableCell>G</TableCell> 
+                <TableCell>08:31</TableCell>   
+                <TableCell >13:31</TableCell>
+                <TableCell>13:17</TableCell>   
+                <TableCell>17:17</TableCell>    
+            </TableRow>   
+            <TableRow>
+                <TableCell>12</TableCell> 
+                <TableCell>0031</TableCell>   
+                <TableCell >sanjeev</TableCell>
+                <TableCell>20/08/2024</TableCell> 
+                <TableCell>G</TableCell> 
+                <TableCell>08:31</TableCell>   
+                <TableCell >13:31</TableCell>
+                <TableCell>13:17</TableCell>   
+                <TableCell>17:17</TableCell>    
+            </TableRow>   
+            <TableRow>
+                <TableCell>13</TableCell> 
+                <TableCell>0031</TableCell>   
+                <TableCell >sanjeev</TableCell>
+                <TableCell>20/08/2024</TableCell> 
+                <TableCell>G</TableCell> 
+                <TableCell>08:31</TableCell>   
+                <TableCell >13:31</TableCell>
+                <TableCell>13:17</TableCell>   
+                <TableCell>17:17</TableCell>    
+            </TableRow>   
+
+            {/* <TableRow>
                 <TableCell style={{ backgroundColor: 'blue', color: 'white', padding: '10px', width: '200px' }} ></TableCell> 
                 <TableCell style={{ backgroundColor: 'blue', color: 'white', padding: '10px', width: '200px' }} >Total</TableCell>  
                 <TableCell style={{ backgroundColor: 'blue', color: 'white', padding: '10px', width: '100px' }}> </TableCell>
                 <TableCell style={{ backgroundColor: 'blue', color: 'white', padding: '10px', width: '200px' }}></TableCell>
                 <TableCell style={{ backgroundColor: 'blue', color: 'white', padding: '10px', width: '100px' }} ></TableCell> 
-            </TableRow>
+            </TableRow> */}
           </Table>
         </TableContainer>
       </Grid>
       <br></br>
-      <Grid item xs={12}>
-        <Typography variant="h7" align="left" style={{ marginTop: '10px' }}>
-          Signature of Employee : shanmu
-        </Typography>
+      
+     
       </Grid>
     </div>
   );

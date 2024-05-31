@@ -18,13 +18,31 @@ import ButtonEpf from './ButtonEpf.js';
 import Gratuity from './components/Gratuity.jsx';
 import Buttongra from './components/Buttongra.js';
 import AttendanceForm from './components/Attendance.jsx';
+import WithdrawalForm from './components/Gratuitywithdrawel.jsx';
+import Mrgabs from './components/mrgabs.js';
+import Medical from './components/Medical';
+import ButtonD7 from './components/d7ReportsButton.js';
+import ButtonD8 from './components/d8ReportsButton.js';
+import ButtonD9 from './components/d9ReportsButton.js';
+import Basicdetails from './components/d7ReportsButton.js';
+import BesicDtailss from './components/BasicDetailsButton.js';
+import Loanreport from './components/LoanReportsButton.js';
+import Payregister from './components/LoanReportsButton.js';
+import Empmaster from './components/EmpMasterDetailsButton.js';
+import Deptwise from './components/DeptWiseButton.js';
+import Bankreg from './components/BankRegButton.js';
+import Deptcatpay from './components/departcartwisepayButton.js';
+import EsiR from './components/EsiReportsButton.js';
+
 
 function App() {
   return (
     <div className="App">
          
-   
-<AttendanceForm/>
+   <EsiR/>
+{/* <MedicalExpenses/> */}
+  {/* <ButtonPrint/> */}
+
     </div>
   );
 }
