@@ -9,21 +9,22 @@ import D7Reports from'./d7Reports';
 import LoanReport from './LoanReports';
 import PayRegister from './PayRegisterReports';
 import PfDetail from './PFDetailsReports';
+import ProgresRep from './ProgressReport';
 
-function PFDetails() {
+function Progressbut() {
     const targetRef = useRef();
     return (
       <div className="App">
         <div ref={targetRef}>
-        < PfDetail/>
+        < ProgresRep/>
         </div>
         <div>
         <Grid item xs={12} textAlign={'center'}>
-          <Button variant='outlined' onClick={ ()=> generatePDF(targetRef, {filename: 'PfDetail.pdf'})}>Download Pdf</Button>
+          <Button variant='outlined' onClick={ ()=> generatePDF(targetRef, {filename: 'ProgresRep.pdf'})}>Download Pdf</Button>
           </Grid>
           </div>
      </div>
     );
 }
 
-export default PFDetails
+export default Progressbut

@@ -59,17 +59,17 @@ function PfDetail() {
                   <TableCell  sx={{border: 'none',borderRight:'2px solid black'}}>0.00</TableCell>
                 </TableRow>
               ))}
-              <TableRow sx={{borderBottom:'3px solid black'}}>
+              <TableRow >
               
                 <TableCell sx={{fontWeight:'bold'}}>total</TableCell>
                 <TableCell></TableCell>
                 <TableCell></TableCell>
                 <TableCell></TableCell>
-                <TableCell> 497,937.00</TableCell>
-                <TableCell>59,753.00</TableCell>
-                <TableCell>41,456.00</TableCell>
-                <TableCell>52,528.00</TableCell>
-                <TableCell>3,197.50</TableCell>
+                <TableCell sx={{borderBottom:'3px solid black',borderTop:'3px solid black'}}> 497,937.00</TableCell>
+                <TableCell sx={{borderBottom:'3px solid black',borderTop:'3px solid black'}}>59,753.00</TableCell>
+                <TableCell sx={{borderBottom:'3px solid black',borderTop:'3px solid black'}}>41,456.00</TableCell>
+                <TableCell sx={{borderBottom:'3px solid black',borderTop:'3px solid black'}}>52,528.00</TableCell>
+                <TableCell sx={{borderBottom:'3px solid black',borderTop:'3px solid black'}}>3,197.50</TableCell>
 
               </TableRow>
             </TableBody>

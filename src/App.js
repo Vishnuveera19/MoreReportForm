@@ -33,13 +33,23 @@ import Deptwise from './components/DeptWiseButton.js';
 import Bankreg from './components/BankRegButton.js';
 import Deptcatpay from './components/departcartwisepayButton.js';
 import EsiR from './components/EsiReportsButton.js';
+import PFDetails from './components/PfDetailsButton.js';
+import EarlyIn from './components/EarlyInAttReportsButton.js';
+import EarlyOut from './components/EarlyOutAttButton.js';
+import LateIn from './components/LateInButton.js';
+import LateOut from './components/LateOutButton.js';
+import Othrs from './components/OTHrsAttButton.js';
+import Absentatt from './components/AbsentAttButton.js';
+import Attreport from './components/AttButton.js';
+import Workedhrs from './components/AttButton.js';
+import Progressbut from './components/ProgressButton.js';
 
 
 function App() {
   return (
     <div className="App">
-         
-   <EsiR/>
+         <Payslip/>
+
 {/* <MedicalExpenses/> */}
   {/* <ButtonPrint/> */}
 

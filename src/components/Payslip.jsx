@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography, Table, TableBody, TableCell, TableContainer, TableRow, Paper, Grid } from '@mui/material';
-
+import sss from'../components/imges/spriya.png'
 const Payslip = ({ employeeDetails }) => {
   return (
     <div style={{ textAlign: 'center', margin: '20px' }}>
@@ -42,8 +42,20 @@ const Payslip = ({ employeeDetails }) => {
             <Table>
               <TableBody>
                 <TableRow>
-                  <TableCell style={{ backgroundColor: 'blue', color: 'white', padding: '10px', width: '200px' }}>Pay Date:</TableCell>
-                  <TableCell style={{ backgroundColor: 'blue', color: 'white', padding: '10px', width: '200px' }}>Pay Type:</TableCell>
+                  <TableCell style={{ backgroundColor: 'blue', color: 'white', padding: '10px', width: '200px' }}>
+                    <img src={sss} width={200} height={200}></img>
+                  </TableCell>
+                  <TableCell>
+                  <TableRow>
+                  <TableCell style={{ backgroundColor: 'blue', color: 'white', padding: '10px', width: '200px' }}>Pay Type:
+
+                  </TableCell>
+                  <TableCell>sanjee</TableCell>
+                 
+                  </TableRow>
+                  </TableCell>
+                 
+
                   <TableCell style={{ backgroundColor: 'blue', color: 'white', padding: '10px', width: '200px' }}>Period:</TableCell>
                 </TableRow>
                 <TableRow>
